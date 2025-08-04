@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link rel="shortcut icon" href="./img/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <style>
+      .slider-video {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+      }
+
+      .slider-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Modal Viewer -->
+    <div id="modal" class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <img id="modal-img" src="" alt="" />
+        <video id="modal-video" controls></video>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <header class="row morado">
+        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 cajaform2">
+          <div class="menu-btn">
+            <i class="fa-solid fa-bars fa-2x"></i>
+          </div>
+          <div class="container">
+            <nav class="nav-main">
+              <img src="" alt="" class="nav-logo" />
+              <ul class="nav-menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="area">
+          <ul class="circles">
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+          </ul>
+
+          <div class="slider">
+            <div class="list">
+              <div class="item"><img class="slider-img" src="images/IMG_20230926_180218.jpg" alt="Imagen 1" loading="lazy" /></div>
+              <div class="item"><img class="slider-img" src="images/lau1.jpg" alt="Imagen 2" loading="lazy" /></div>
+              <div class="item"><img class="slider-img" src="images/IMG_20230926_182039.jpg" alt="Imagen 3" loading="lazy" /></div>
+              <div class="item"><img class="slider-img" src="images/lucy.jpg" alt="Imagen 4" loading="lazy" /></div>
+              <div class="item"><img class="slider-img" src="images/nicolas.jpg" alt="Imagen 5" loading="lazy" /></div>
+              <div class="item"><img class="slider-img" src="images/felipe1.jpeg" alt="Imagen 6" loading="lazy" /></div>
+              <div class="item"><img class="slider-img" src="images/felipe2.jpeg" alt="Imagen 7" loading="lazy" /></div>
+              <div class="item">
+                <video class="slider-video" controls preload="metadata" title="Animación Logo">
+                  <source src="videos/animaciónlogo.mp4" type="video/mp4" />
+                  Tu navegador no soporta videos HTML5.
+                </video>
+              </div>
+              <div class="item">
+                <video class="slider-video" controls preload="metadata" title="Filminuto">
+                  <source src="videos/Timeline 1.mp4" type="video/mp4" />
+                  Tu navegador no soporta videos HTML5.
+                </video>
+              </div>
+              <div class="item">
+                <video class="slider-video" controls preload="metadata" title="Spot optimización">
+                  <source src="videos/manilla.mp4" type="video/mp4" />
+                  Tu navegador no soporta videos HTML5.
+                </video>
+              </div>
+            </div>
+            <div class="buttons">
+              <button id="prev"><</button>
+              <button id="next">></button>
+            </div>
+            <ul class="dots">
+              <li class="active"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <script src="portafoli.js"></script>
+  </body>
+</html>
